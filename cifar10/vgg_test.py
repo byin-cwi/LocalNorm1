@@ -141,7 +141,7 @@ class cifar10vgg:
         model.add(Flatten())
         model.add(Dense(512,kernel_regularizer=regularizers.l2(weight_decay)))
         model.add(Activation('relu'))
-        model.add(BatchNormalization())
+ 
 
 #         model.add(Dropout(0.5))
         model.add(Dense(self.num_classes))
